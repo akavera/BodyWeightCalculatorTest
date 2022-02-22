@@ -22,7 +22,7 @@ public class CalculatingTest {
         driver.findElement(By.name("ht")).sendKeys("180");
         driver.findElement(By.name("cc")).click();
         String isStarvationMessageShown = driver.findElement(By.className("content")).getAttribute("value");
-        Assert.assertEquals(isStarvationMessageShown,"Your category is Starvation");
+        Assert.assertEquals(isStarvationMessageShown,"Your category is Starvation","Message isn't correct");
     }
 
     @Test
@@ -32,7 +32,7 @@ public class CalculatingTest {
         driver.findElement(By.name("ht")).sendKeys("170");
         driver.findElement(By.name("cc")).click();
         String isUnderweightMessageShown = driver.findElement(By.className("content")).getAttribute("value");
-        Assert.assertEquals(isUnderweightMessageShown,"Your category is Underweight");
+        Assert.assertEquals(isUnderweightMessageShown,"Your category is Underweight","Message isn't correct");
     }
 
     @Test
@@ -42,7 +42,7 @@ public class CalculatingTest {
         driver.findElement(By.name("ht")).sendKeys("170");
         driver.findElement(By.name("cc")).click();
         String isNormalWeightMessageShown=driver.findElement(By.className("content")).getAttribute("value");
-        Assert.assertEquals(isNormalWeightMessageShown,"Your category is Normal");
+        Assert.assertEquals(isNormalWeightMessageShown,"Your category is Normal","Message isn't correct");
     }
 
     @Test
@@ -52,7 +52,7 @@ public class CalculatingTest {
         driver.findElement(By.name("ht")).sendKeys("175");
         driver.findElement(By.name("cc")).click();
         String isOverweightMessageShown=driver.findElement(By.className("content")).getAttribute("value");
-        Assert.assertEquals(isOverweightMessageShown,"Your category is Overweight");
+        Assert.assertEquals(isOverweightMessageShown,"Your category is Overweight","Message isn't correct");
     }
 
     @Test
@@ -62,7 +62,7 @@ public class CalculatingTest {
         driver.findElement(By.name("ht")).sendKeys("160");
         driver.findElement(By.name("cc")).click();
         String isObeseMessageShown=driver.findElement(By.className("content")).getAttribute("value");
-        Assert.assertEquals(isObeseMessageShown,"Your category is Obese");
+        Assert.assertEquals(isObeseMessageShown,"Your category is Obese","Message isn't correct");
     }
 
     @AfterMethod
