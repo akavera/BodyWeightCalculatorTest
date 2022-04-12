@@ -1,0 +1,17 @@
+h1 {
+          background-color: #aa06ff;
+          color: white;
+          border: 2px solid black;
+          font-size: 120px;
+          font-family: Arial;
+          font-weight: bold;
+          text-align: center;
+        }
+ h2 {
+       color: #fe00e1;
+       font-size: 60px;
+       font-family: Courier New;
+       font-weight: bold;
+       font-style: italic;
+       text-align: center;
+ }
